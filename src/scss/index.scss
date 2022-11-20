@@ -1,7 +1,7 @@
 body {
+  font-family: "Uchiyama", sans-serif;
   font-weight: 800;
-  font-size: 70px;
-  font-family: "Uchiyama";
+  font-size: 1.7em;
 }
 
 #root {
@@ -23,17 +23,17 @@ body {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   margin-top: 2.5em;
-  margin-left: 3em;
+  margin-left: 1.5em;
 }
 
 .contact {
   text-align: left;
   font-family: "Ubuntu", sans-serif;
-  margin-left: 2em;
+  margin-left: 0;
 }
 
 .mapImg {
-  width: 90%;
+  width: 85%;
   height: 95%;
 }
 
@@ -43,13 +43,15 @@ body {
 
 .city {
   font-size: 36px;
-  margin-bottom: 0.6em;
+  margin-bottom: 0;
   align-items: flex-end;
+  margin-top: 0;
 }
 
 .phone {
   margin-bottom: 0.6em;
   font-size: 36px;
+  margin-top: 0;
 }
 
 .address {
