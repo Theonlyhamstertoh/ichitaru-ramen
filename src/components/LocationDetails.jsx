@@ -10,7 +10,11 @@ export default function LocationDetails(county, city, phone, address) {
             <div className="container mapcontact">
                 <div className="map">
                     <a href="https://google.com">
-                        <img className="mapImg" src="src/imgs/map.png" alt="" />
+                        <img
+                            className="mapImg"
+                            src="assets/icons/map.png"
+                            alt=""
+                        />
                     </a>
                 </div>
                 <div className="contact">
@@ -20,21 +24,21 @@ export default function LocationDetails(county, city, phone, address) {
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="src/imgs/ubereats.png"
+                                src="assets/icons/ubereats.png"
                                 alt="uber-eats"
                             />
                         </a>
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="src/imgs/ubereats.png"
+                                src="assets/icons/doordash.png"
                                 alt="uber-eats"
                             />
                         </a>
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="src/imgs/grubhub.png"
+                                src="assets/icons/grubhub.png"
                                 alt="uber-eats"
                             />
                         </a>
@@ -62,7 +66,11 @@ export default function LocationDetails(county, city, phone, address) {
             <div className="container mapcontact">
                 <div className="map">
                     <a href="https://google.com">
-                        <img className="mapImg" src="src/imgs/map.png" alt="" />
+                        <img
+                            className="mapImg"
+                            src="assets/icons/map.png"
+                            alt=""
+                        />
                     </a>
                 </div>
                 <div className="contact">
@@ -72,21 +80,21 @@ export default function LocationDetails(county, city, phone, address) {
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="src/imgs/ubereats.png"
+                                src="assets/icons/ubereats.png"
                                 alt="uber-eats"
                             />
                         </a>
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="src/imgs/ubereats.png"
+                                src="assets/icons/ubereats.png"
                                 alt="uber-eats"
                             />
                         </a>
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="src/imgs/grubhub.png"
+                                src="assets/icons/grubhub.png"
                                 alt="uber-eats"
                             />
                         </a>
