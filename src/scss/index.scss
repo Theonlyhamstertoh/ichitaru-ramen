@@ -1,4 +1,12 @@
 body {
+    font-family: "Uchiyama", sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+}
+
+@font-face {
+    font-family: "Uchiyama";
+    src: url("../fonts/uchiyama.ttf");
     font-size: 21px;
     background-image: url("../imgs/testbg.jpeg");
 }
