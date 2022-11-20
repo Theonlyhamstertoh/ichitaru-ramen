@@ -87,7 +87,7 @@ export default function LocationDetails(county, city, phone, address) {
                         <a href="https://google.com">
                             <img
                                 className="app"
-                                src="assets/icons/ubereats.png"
+                                src="assets/icons/doordash.png"
                                 alt="uber-eats"
                             />
                         </a>
