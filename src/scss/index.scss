@@ -1,3 +1,65 @@
 body {
-  background-color: green;
+    font-size: 21px;
+    background-image: url("../imgs/testbg.jpeg");
+}
+
+.location {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.mapcontact {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    margin-top: 2.5em;
+    margin-left: 3em;
+}
+
+.contact {
+    text-align: left;
+    font-family: "Ubuntu", sans-serif;
+    margin-left: 2em;
+}
+
+.mapImg {
+    width: 90%;
+    height: 95%;
+}
+
+.county {
+    font-size: 16px;
+}
+
+.city {
+    font-size: 36px;
+    margin-bottom: 0.6em;
+    align-items: flex-end;
+}
+
+.phone {
+    margin-bottom: 0.6em;
+    font-size: 36px;
+}
+
+.address {
+    font-size: 20px;
+}
+
+.hours {
+    font-size: 16px;
+}
+
+.city a {
+    text-decoration: none;
+}
+
+.app {
+    width: 44px;
+    border-radius: 15px;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.app:first-child {
+    margin-left: 10px;
 }
