@@ -4,9 +4,21 @@ body {
   font-size: 1.7em;
 }
 
-#root {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+img,
+section,
+main {
   margin: 0;
+  padding: 0;
 }
+
 @font-face {
   font-family: "Uchiyama";
   src: url("../fonts/uchiyama.ttf");
