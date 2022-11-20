@@ -4,6 +4,21 @@ body {
     font-size: 1.7em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+img,
+section,
+main {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "Uchiyama";
     src: url("../fonts/uchiyama.ttf");
@@ -48,7 +63,7 @@ body {
 .phone {
     margin-bottom: 0.6em;
     font-size: 36px;
-    margin-top: 0.6em;
+    margin-top: 0;
 }
 
 .address {
