@@ -1,8 +1,12 @@
+@use "./layout/background";
+
 body {
   font-family: "Uchiyama", sans-serif;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   font-weight: 800;
   font-size: 1.7em;
+  background-image: url("/assets/layouts/background.svg");
+  background-repeat: repeat-y;
 }
 
 h1,
@@ -44,7 +48,6 @@ main {
 
 .contact {
   text-align: left;
-  font-family: "Ubuntu", sans-serif;
   margin-left: 0;
 }
 
