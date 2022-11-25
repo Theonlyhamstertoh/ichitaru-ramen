@@ -4,15 +4,36 @@ import LocationDetails from "./components/LocationDetails";
 function App() {
   return (
     <div>
-      <HomeLayout />
       <Background />
-      {/* <img src="assets/layouts/menu-layout.svg" /> */}
+      <HomeLayout />
+      <LocationDetails />
+      <Ramen />
+      <Menu />
       {/* <img src="assets/layouts/background.svg" className="background-pattern" /> */}
     </div>
   );
   // return <LocationDetails />;
 }
 
+function Menu() {
+  return (
+    <div>
+      <img src="assets/layouts/menu-layout.svg" className="menu-layout" />
+    </div>
+  );
+}
+
+{
+  /* <img src="assets/layouts/footer-layout.png" />; */
+}
+function Ramen() {
+  return (
+    <div className="brown-background">
+      <h1>Ramen</h1>
+      <img className="ramen" src="/assets/ramen/soba-ramen.png" />
+    </div>
+  );
+}
 function Background() {
   return (
     <div>
