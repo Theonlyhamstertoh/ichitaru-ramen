@@ -6,11 +6,12 @@ function App() {
         <div>
             <HomeLayout />
             <Background />
+            <Location />
             {/* <img src="assets/layouts/menu-layout.svg" /> */}
             {/* <img src="assets/layouts/background.svg" className="background-pattern" /> */}
         </div>
     );
-    // return <LocationDetails />;
+    // return <Location />;
 }
 
 function Background() {
