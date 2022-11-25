@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LocationDetails from "./components/LocationDetails";
+import Location from "./components/Location";
 
 function App() {
   return (
