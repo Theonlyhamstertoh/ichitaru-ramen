@@ -1,14 +1,14 @@
 import { useState } from "react";
 import Location from "./components/Location";
-
+import { ramens } from "./ramens";
 function App() {
   return (
     <div>
-      <Background />
       <HomeLayout />
-      <LocationDetails />
+
+      <Location />
       <Ramen />
-      <Menu />
+      {/* <Menu /> */}
       {/* <img src="assets/layouts/background.svg" className="background-pattern" /> */}
     </div>
   );
@@ -28,9 +28,13 @@ function Menu() {
 }
 function Ramen() {
   return (
-    <div className="brown-background">
-      <h1>Ramen</h1>
-      <img className="ramen" src="/assets/ramen/soba-ramen.png" />
+    <div className="ramen-section">
+      <h1 className="flex-center">Ramen</h1>
+      <div className="ramen-slideshow">
+        {ramens.map(({ src, name, id, isNew, className }) => (
+          <img key={id} className={`ramen ${className ?? ""}`} src={src} />
+        ))}
+      </div>
     </div>
   );
 }
