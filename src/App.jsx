@@ -21,10 +21,11 @@ function App() {
     } else {
       document.body.style.overflow = "initial";
     }
-
-    setTimeout(() => setLoading(false), 2000);
   }, [loading]);
 
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
   return (
     <div>
       <div className={loading ? "show-scroller" : "display-none"}>
