@@ -4,7 +4,7 @@ import Location from "./components/Location";
 import Menu from "./components/Menu";
 import Ramen from "./components/Ramen";
 import useResize from "./hooks/useResize";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import HashLoader from "react-spinners/HashLoader";
 
 function App() {
   const isMobile = useResize();
