@@ -4,20 +4,20 @@
 @use "./layout/location";
 @use "./layout/ramen-section";
 body {
-  font-family: "Uchiyama", sans-serif;
-  // overflow-x: hidden;
-  font-weight: 800;
-  font-size: 1.7em;
-  background-image: url("layouts/background.png");
-  background-repeat: repeat;
-  width: 100%;
-  height: 300vh;
-  background-color: #e4c19e;
+    font-family: "Uchiyama", sans-serif;
+    // overflow-x: hidden;
+    font-weight: 800;
+    font-size: 1.7em;
+    background-image: url("layouts/background.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 300vh;
+    background-color: #e4c19e;
 }
 
 @font-face {
-  font-family: "Uchiyama";
-  src: url("../fonts/uchiyama.ttf");
-  font-size: 21px;
-  background-image: url("../imgs/testbg.jpeg");
+    font-family: "Uchiyama";
+    src: url("../fonts/uchiyama.ttf");
+    font-size: 21px;
+    background-image: url("../imgs/testbg.jpeg");
 }
