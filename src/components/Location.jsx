@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LocationDetails from "./LocationDetails";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Location() {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []);
     return (
-        <div className="container-fluid location">
+        <div data-aos="fade-in" className="container-fluid location">
             <div>
                 <h1 className="locationTitle">Locations</h1>
             </div>
             <div className="mapSection">
                 <div className="mapcontact">
-                    <div className="map">
+                    <div data-aos="fade-in" className="map">
                         <img
                             className="mapImg"
                             src="assets/icons/map.png"
