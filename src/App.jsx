@@ -38,8 +38,8 @@ function App() {
         />
       </div>
 
-      <div className={loading ? "" : "show"}>
-        <HomeLayout isMobile={isMobile} setLoading={setLoading} />
+      <div className={loading ? "hide" : "show"}>
+        <HomeLayout isMobile={isMobile} />
         <Location />
         <Ramen />
         <Menu isMobile={isMobile} />
