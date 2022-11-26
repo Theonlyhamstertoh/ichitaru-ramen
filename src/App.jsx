@@ -8,33 +8,33 @@ import HashLoader from "react-spinners/HashLoader";
 
 function App() {
     const isMobile = useResize();
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
+    function changeLoading(boolean) {
+        console.log(boolean);
+    }
     useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 3000);
-    }, []);
+        console.log(loading);
+        // setLoading(true);
+    }, [loading]);
+
     return (
         <div>
-            {loading ? (
-                <HashLoader
-                    className="abs-center"
+            <div className={loading ? "show abs-center" : "display-none"}>
+                <ClimbingBoxLoader
                     color={"#ffd700"}
-                    loading={loading}
-                    size={100}
+                    size={15}
                     aria-label="Loading Spinner"
                     data-testid="loader"
                 />
-            ) : (
-                <>
-                    <HomeLayout isMobile={isMobile} />
-                    <Location />
-                    <Ramen />
-                    <Menu isMobile={isMobile} />
-                </>
-            )}
+            </div>
+
+            <div className={loading ? "hide" : "show"}>
+                <HomeLayout isMobile={isMobile} setLoading={setLoading} />
+                <Location />
+                <Ramen />
+                <Menu isMobile={isMobile} />
+            </div>
         </div>
     );
 }
