@@ -1,99 +1,99 @@
-@mixin flex($direction: row, $justify-content: center, $align-items: center, $flex: flex) {
-  display: $flex;
-  flex-direction: $direction;
-  justify-content: $justify-content;
-  align-items: $align-items;
+@mixin flex(
+    $direction: row,
+    $justify-content: center,
+    $align-items: center,
+    $flex: flex
+) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
 }
 
 .flex-center {
-  @include flex(column, center, center);
+    @include flex(column, center, center);
 }
 
 .v-margin-10 {
-  margin: 40px 0px;
+    margin: 40px 0px;
 }
 
 .home-section {
-  @include flex();
+    @include flex();
 
-  position: relative;
-  overflow-x: hidden;
-  background-image: url("layouts/home-layout-desktop2.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  transition: all 0.1 linear;
-  height: 1600px;
-  @media (max-width: 1800px) {
-    height: 1300px;
+    position: relative;
+    overflow-x: hidden;
+    background-image: url("layouts/home-layout-desktop2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
-    // background-size: 150%;
-  }
-  @media (max-width: 1500px) {
-    height: 120vh;
-    background-size: 100%;
-    // background-size: 150%;
-  }
-  @media (max-width: 1200px) {
-    height: 900px;
-    background-size: 100%;
-    // background-size: 150%;
-  }
-  @media (max-width: 913px) {
-    height: 1000px;
-    background-size: 150%;
-  }
-  @media (max-width: 736px) {
-    height: 800px;
-    background-size: 150%;
-  }
-  @media (max-width: 693px) {
-    height: 1000px;
-    background-image: url("/layouts/home-layout-mobile.svg");
-    background-size: auto;
-  }
+    transition: all 0.1 linear;
+    height: 1600px;
+    @media (max-width: 1800px) {
+        height: 1300px;
+        background-size: cover;
+        // background-size: 150%;
+    }
+    @media (max-width: 1500px) {
+        height: 120vh;
+        background-size: 100%;
+        // background-size: 150%;
+    }
+    @media (max-width: 1200px) {
+        height: 900px;
+        background-size: 100%;
+        // background-size: 150%;
+    }
+    @media (max-width: 913px) {
+        height: 1000px;
+        background-size: 150%;
+    }
+    @media (max-width: 736px) {
+        height: 800px;
+        background-size: 150%;
+    }
+    @media (max-width: 693px) {
+        height: 1000px;
+        background-image: url("/layouts/home-layout-mobile.svg");
+        background-size: auto;
+    }
 }
 
 .order-button {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    transition: width 0.1s linear;
+    &:hover {
+        width: 250px;
+    }
 
-  transition: width 0.1s linear;
-  &:hover {
-    width: 250px;
-  }
-
-  @media (max-width: 2000px) {
-    width: 200px;
-    top: 60%;
-    left: 50%;
-  }
-  @media (max-width: 1500px) {
-    width: 180px;
-    top: 65%;
-    left: 50%;
-    width: 200px;
-  }
-  @media (max-width: 1180px) {
-    width: 150px;
-    top: 55%;
-    left: 50%;
-  }
-  @media (max-width: 913px) {
-    width: 150px;
-    top: 60%;
-    left: 50%;
-  }
-  @media (max-width: 736px) {
-    width: 130px;
-    top: 57%;
-    left: 50%;
-  }
-  @media (max-width: 693px) {
-    width: 130px;
-    top: 38%;
-    left: 50%;
-  }
+    @media (max-width: 2000px) {
+        width: 200px;
+        top: 60%;
+        left: 50%;
+    }
+    @media (max-width: 1500px) {
+        width: 180px;
+        top: 65%;
+        left: 50%;
+        width: 200px;
+    }
+    @media (max-width: 1180px) {
+        width: 150px;
+        top: 55%;
+        left: 50%;
+    }
+    @media (max-width: 913px) {
+        width: 150px;
+        top: 60%;
+        left: 50%;
+    }
+    @media (max-width: 736px) {
+        width: 130px;
+        top: 57%;
+        left: 50%;
+    }
+    @media (max-width: 693px) {
+        width: 130px;
+        top: 38%;
+        left: 50%;
+    }
 }

@@ -1,19 +1,42 @@
+import { useEffect, useState } from "react";
 import HomeLayout from "./components/HomeLayout";
 import Location from "./components/Location";
 import Menu from "./components/Menu";
 import Ramen from "./components/Ramen";
 import useResize from "./hooks/useResize";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
-  const isMobile = useResize();
-  return (
-    <div>
-      <HomeLayout isMobile={isMobile} />
-      <Location />
-      <Ramen />
-      <Menu isMobile={isMobile} />
-    </div>
-  );
+    const isMobile = useResize();
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+    }, []);
+    return (
+        <div>
+            {loading ? (
+                <ClimbingBoxLoader
+                    className="abs-center"
+                    color={"#ffd700"}
+                    loading={loading}
+                    size={15}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                />
+            ) : (
+                <>
+                    <HomeLayout isMobile={isMobile} />
+                    <Location />
+                    <Ramen />
+                    <Menu isMobile={isMobile} />
+                </>
+            )}
+        </div>
+    );
 }
 
 export default App;
