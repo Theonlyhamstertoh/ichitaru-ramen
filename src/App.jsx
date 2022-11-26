@@ -15,12 +15,17 @@ function App() {
   }
   useEffect(() => {
     console.log(loading);
+    if (loading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "initial";
+    }
     // setLoading(true);
   }, [loading]);
 
   return (
     <div>
-      <div className={loading ? "show abs-center" : "display-none"}>
+      <div className={loading ? "show-scroller" : "display-none"}>
         <ClimbingBoxLoader
           color={"#ffd700"}
           size={15}

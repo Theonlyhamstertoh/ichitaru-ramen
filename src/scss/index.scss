@@ -30,6 +30,7 @@ body {
 
 .hide {
   visibility: hidden;
+  max-height: 0;
 }
 
 .display-none {
@@ -37,6 +38,15 @@ body {
 }
 .show {
   visibility: visible;
+}
+
+.show-scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
 }
 
 @font-face {
