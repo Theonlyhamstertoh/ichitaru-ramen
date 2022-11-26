@@ -78,6 +78,7 @@ body {
 
 .address {
   font-size: 65%;
+  margin-bottom: 0.5em;
 }
 
 .hours {
@@ -217,11 +218,14 @@ body {
   .location {
     display: grid;
     align-items: center;
+    font-size: 1.3em;
+  }
+  .locationTitle {
+    font-size: 1.5em;
   }
 
   .map {
     display: flex;
-    background-color: aqua;
     justify-content: center;
   }
   .mapImg {
@@ -234,13 +238,13 @@ body {
     grid-template-columns: 0.1fr 1fr 0.1fr;
     grid-template-rows: auto;
     width: 100%;
-    margin-top: 3em;
+    margin-top: 1em;
     text-align: center;
   }
   .city {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    margin: 0;
+    margin: 0.3em;
   }
   .county {
     grid-row: 0 / 1;
@@ -273,13 +277,14 @@ body {
   .hoursText {
     text-align: right;
     margin-top: 0;
+    line-height: 23px;
   }
   .app {
-    width: 12%;
+    width: 15%;
   }
   .apps {
     grid-column: 2 / 3;
     grid-row: 6 /7;
-    margin-bottom: 0.5em;
+    margin: 0.3em;
   }
 }
