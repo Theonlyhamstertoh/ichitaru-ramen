@@ -21,7 +21,8 @@ function App() {
     } else {
       document.body.style.overflow = "initial";
     }
-    // setLoading(true);
+
+    setTimeout(() => setLoading(false), 3500);
   }, [loading]);
 
   return (
