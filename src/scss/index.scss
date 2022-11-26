@@ -43,10 +43,27 @@ body {
 .show-scroller {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100vw;
   position: fixed;
   height: 100vh;
+
+  h1 {
+    animation: 0.8s zoom infinite ease-in;
+    animation-direction: alternate;
+    padding-bottom: 15px;
+  }
+}
+
+@keyframes zoom {
+  from {
+    font-size: 50px;
+  }
+
+  to {
+    font-size: 40px;
+  }
 }
 
 @font-face {

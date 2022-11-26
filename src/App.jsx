@@ -4,7 +4,7 @@ import Location from "./components/Location";
 import Menu from "./components/Menu";
 import Ramen from "./components/Ramen";
 import useResize from "./hooks/useResize";
-import HashLoader from "react-spinners/HashLoader";
+import { BounceLoader } from "react-spinners";
 
 function App() {
   const isMobile = useResize();
@@ -26,9 +26,10 @@ function App() {
   return (
     <div>
       <div className={loading ? "show-scroller" : "display-none"}>
-        <ClimbingBoxLoader
-          color={"#ffd700"}
-          size={15}
+        <h1>Loading</h1>
+        <BounceLoader
+          color={"#272623"}
+          size={75}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
