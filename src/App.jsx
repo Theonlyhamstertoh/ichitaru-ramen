@@ -22,7 +22,7 @@ function App() {
       document.body.style.overflow = "initial";
     }
 
-    setTimeout(() => setLoading(false), 1000);
+    setTimeout(() => setLoading(false), 2000);
   }, [loading]);
 
   return (
