@@ -1,0 +1,25 @@
+// RAMEN
+
+.ramen-section {
+  background-image: url("assets/layouts/ramen-background.png");
+  background-size: cover;
+  padding: 50px 0;
+}
+.ramen-slideshow {
+  display: flex;
+  overflow-y: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+}
+.ramen {
+  width: 500px;
+  height: 500px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #544d42;
+}

@@ -1,0 +1,56 @@
+@mixin flex($direction: row, $justify-content: center, $align-items: center, $flex: flex) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+.background-pattern {
+}
+
+.home-section {
+  // margin-bottom: 15%;
+  position: relative;
+  overflow-x: hidden;
+  background-image: url("assets/layouts/home-layout-desktop.svg");
+  // display: flex;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (max-width: 768px) {
+    background-image: url("assets/layouts/home-layout-mobile.svg");
+    // width:
+    height: 100vh;
+  }
+}
+
+.home-mobile-section {
+  background-image: url("assets/layouts/home-layout-mobile.svg");
+  height: 120vh;
+}
+.home-background {
+  // width: 100vw;
+  // position: absolute;
+}
+
+// .ichitaru-logo {
+//   width: 500px;
+//   mix-blend-mode: multiply;
+
+//   @media screen and (max-width: 1350px) {
+//     width: 300px;
+//   }
+// }
+
+.flex-center {
+  @include flex(column, center, center);
+}
+
+// @todo: add some cool styles
+.online-order-button {
+  width: 100%;
+}
+.v-margin-10 {
+  margin: 40px 0px;
+}

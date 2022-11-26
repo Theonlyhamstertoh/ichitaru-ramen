@@ -1,10 +1,8 @@
 @use "./reset.scss";
-@use "./layout/background";
+@use "./layout/home";
+@use "./layout/menu";
+@use "./layout/ramen-section";
 body {
-  font-family: "Uchiyama", sans-serif;
-  font-weight: 800;
-  font-size: 1.7em;
-
   font-family: "Uchiyama", sans-serif;
   // overflow-x: hidden;
   font-weight: 800;
@@ -22,7 +20,6 @@ body {
   font-size: 21px;
   background-image: url("../imgs/testbg.jpeg");
 }
-
 .location {
   text-align: center;
   margin-top: 16px;
@@ -38,8 +35,8 @@ body {
 
 .contact {
   text-align: left;
-  font-family: sans-serif;
   margin-left: 1em;
+  color: #514a3f;
   // padding-left: 2em
 }
 
@@ -71,7 +68,7 @@ body {
 
 .phone {
   margin-bottom: 0.6em;
-
+  font-family: "Karla";
   font-size: 110%;
   margin-top: 0.6em;
 }
@@ -79,10 +76,12 @@ body {
 .address {
   font-size: 65%;
   margin-bottom: 0.5em;
+  font-family: "Karla";
 }
 
 .hours {
   font-size: 90%;
+  font-weight: 400;
 }
 
 .city a {
