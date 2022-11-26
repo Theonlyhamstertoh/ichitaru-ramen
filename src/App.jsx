@@ -12,6 +12,7 @@ function App() {
 
   function changeLoading(boolean) {
     console.log(boolean);
+    // setLoading(false);
   }
   useEffect(() => {
     console.log(loading);
@@ -35,7 +36,7 @@ function App() {
         />
       </div>
 
-      <div className={loading ? "hide" : "show"}>
+      <div className={loading ? "" : "show"}>
         <HomeLayout isMobile={isMobile} setLoading={setLoading} />
         <Location />
         <Ramen />
