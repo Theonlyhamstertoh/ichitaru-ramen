@@ -1,0 +1,270 @@
+.location {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 50px;
+}
+
+.mapcontact {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  margin-top: 2.5em;
+  margin-left: 1.5em;
+}
+
+.contact {
+  text-align: left;
+  margin-left: 1em;
+  color: #514a3f;
+  // padding-left: 2em
+}
+
+.map {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  text-align: left;
+  margin-left: 0;
+}
+
+.mapImg {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+.county {
+  font-size: 16px;
+}
+
+.city {
+  font-size: 110%;
+  margin-bottom: 0;
+  align-items: flex-end;
+  margin-top: -15px;
+  display: inline;
+}
+
+.phone {
+  margin-bottom: 0.6em;
+  font-family: "Karla";
+  font-size: 110%;
+  margin-top: 0.6em;
+}
+
+.address {
+  font-size: 65%;
+  margin-bottom: 0.5em;
+  font-family: "Karla";
+}
+
+.hours {
+  font-size: 90%;
+  font-weight: 400;
+}
+
+.city a {
+  text-decoration: none;
+}
+
+.app {
+  width: 45px;
+  border-radius: 30%;
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+.app:first-child {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+  .city {
+    font-size: 95%;
+  }
+  .county {
+    font-size: 13px;
+  }
+
+  .contact {
+    margin-left: 0;
+  }
+  .mapImg {
+    width: 90%;
+  }
+
+  .map {
+    padding-left: 0em;
+  }
+  .phone {
+    margin-bottom: 0.6em;
+    font-size: 95%;
+    margin-top: 0.6em;
+  }
+
+  .address {
+    font-size: 50%;
+  }
+  .hours {
+    font-size: 75%;
+  }
+  .app {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .city {
+    font-size: 85%;
+    margin-top: -8px;
+  }
+  .county {
+    font-size: 12px;
+  }
+  .phone {
+    margin-bottom: 0.6em;
+
+    font-size: 85%;
+    margin-top: 0.6em;
+  }
+
+  .map {
+    padding-left: 0em;
+  }
+
+  .address {
+    font-size: 40%;
+  }
+  .hours {
+    font-size: 65%;
+  }
+  .app {
+    width: 30px;
+    border-radius: 30%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .city {
+    font-size: 75%;
+    margin-top: -5px;
+  }
+  .map {
+    padding-left: 0em;
+  }
+  .mapImg {
+    width: 95%;
+  }
+  .county {
+    font-size: 10px;
+  }
+  .phone {
+    margin-bottom: 0.6em;
+    font-size: 75%;
+    margin-top: 0.6em;
+  }
+
+  .address {
+    font-size: 30%;
+  }
+  .hours {
+    font-size: 55%;
+  }
+  .app {
+    width: 30px;
+    border-radius: 30%;
+    &:first-child {
+      margin-left: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mapcontact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .map {
+    grid-row: 2/3;
+    padding-right: 0;
+    grid-column: 1 / 3;
+  }
+  .mapImg {
+    width: 90%;
+  }
+  .location {
+    display: grid;
+    align-items: center;
+    font-size: 1.3em;
+  }
+  .locationTitle {
+    font-size: 1.5em;
+  }
+
+  .map {
+    display: flex;
+    justify-content: center;
+  }
+  .mapImg {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+  }
+  .city {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin: 0.3em;
+  }
+  .county {
+    grid-row: 0 / 1;
+    grid-column: 2 / 3;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .phone {
+    margin-bottom: 0;
+    font-size: 60%;
+    margin-top: 0em;
+    grid-column: 2 / 3;
+    grid-row: 3 /4;
+  }
+
+  .address {
+    font-size: 40%;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: 0.6em;
+  }
+  .hours {
+    display: flex;
+    font-size: 55%;
+    grid-column: 2 / 3;
+    justify-content: center;
+    grid-row: 5 /6;
+    margin: 0;
+  }
+  .hoursText {
+    text-align: right;
+    margin-top: 0;
+    line-height: 23px;
+  }
+  .app {
+    width: 15%;
+  }
+  .apps {
+    grid-column: 2 / 3;
+    grid-row: 6 /7;
+    margin: 0.3em;
+  }
+}
