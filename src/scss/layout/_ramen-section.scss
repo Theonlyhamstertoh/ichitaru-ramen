@@ -7,6 +7,7 @@
 }
 .ramen-slideshow {
   display: flex;
+  padding-bottom: 75px;
   overflow-y: hidden;
 
   /* ===== Scrollbar CSS ===== */
@@ -28,8 +29,19 @@
     cursor: pointer;
     border-radius: 10px;
   }
+  color: #544d42;
 }
-.ramen {
+
+.ramen-item {
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 5%;
+  }
+}
+
+.ramen-photo {
   height: 500px;
   @media (max-width: 500px) {
     // width: 500px;

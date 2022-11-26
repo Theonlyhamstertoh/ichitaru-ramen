@@ -5,6 +5,14 @@
   align-items: $align-items;
 }
 
+.flex-center {
+  @include flex(column, center, center);
+}
+
+.v-margin-10 {
+  margin: 40px 0px;
+}
+
 .home-section {
   @include flex();
 
@@ -88,14 +96,4 @@
     top: 38%;
     left: 50%;
   }
-}
-
-.flex-center {
-  @include flex(column, center, center);
-}
-
-// @todo: add some cool styles
-
-.v-margin-10 {
-  margin: 40px 0px;
 }

@@ -6,7 +6,10 @@ export default function Ramen() {
       <h1 className="flex-center">Ramen</h1>
       <div className="ramen-slideshow">
         {ramens.map(({ src, name, id, isNew, className }) => (
-          <img key={id} className="ramen" src={src} />
+          <div className="flex-center ramen-item">
+            <img key={id} className="ramen-photo" src={src} />
+            <p className="ramen-name">{name}</p>
+          </div>
         ))}
       </div>
     </div>
