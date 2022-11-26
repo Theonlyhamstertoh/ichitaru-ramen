@@ -3,20 +3,38 @@
 .ramen-section {
   background-image: url("assets/layouts/ramen-background.png");
   background-size: cover;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .ramen-slideshow {
   display: flex;
   overflow-y: hidden;
 
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+
+  /* Chrome, Edge, and Safari */
   &::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    scrollbar-width: 5px;
+    scrollbar-color: #8f7453 #ffffff;
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #b19676;
+    cursor: pointer;
+    border-radius: 10px;
   }
 }
 .ramen {
-  width: 500px;
   height: 500px;
+  @media (max-width: 500px) {
+    // width: 500px;
+    height: 400px;
+  }
 }
 
 h1 {

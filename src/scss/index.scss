@@ -192,8 +192,11 @@ body {
     font-size: 55%;
   }
   .app {
-    width: 25px;
+    width: 30px;
     border-radius: 30%;
+    &:first-child {
+      margin-left: 5px;
+    }
   }
 }
 

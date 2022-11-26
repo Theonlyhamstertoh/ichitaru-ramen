@@ -5,52 +5,97 @@
   align-items: $align-items;
 }
 
-.background-pattern {
-}
-
 .home-section {
-  // margin-bottom: 15%;
+  @include flex();
+
   position: relative;
   overflow-x: hidden;
-  background-image: url("assets/layouts/home-layout-desktop.svg");
-  // display: flex;
-  height: 120vh;
+  background-image: url("assets/layouts/home-layout.svg");
   background-repeat: no-repeat;
   background-position: top center;
-
-  @media (max-width: 768px) {
+  background-size: cover;
+  transition: all 0.1 linear;
+  height: 1600px;
+  @media (max-width: 1800px) {
+    height: 1300px;
+    background-size: cover;
+    // background-size: 150%;
+  }
+  @media (max-width: 1500px) {
+    height: 120vh;
+    background-size: 100%;
+    // background-size: 150%;
+  }
+  @media (max-width: 1200px) {
+    height: 900px;
+    background-size: 100%;
+    // background-size: 150%;
+  }
+  @media (max-width: 913px) {
+    height: 1000px;
+    background-size: 150%;
+  }
+  @media (max-width: 736px) {
+    height: 800px;
+    background-size: 150%;
+  }
+  @media (max-width: 693px) {
+    height: 1000px;
     background-image: url("assets/layouts/home-layout-mobile.svg");
-    // width:
-    height: 100vh;
+    background-size: auto;
   }
 }
 
-.home-mobile-section {
-  background-image: url("assets/layouts/home-layout-mobile.svg");
-  height: 120vh;
-}
-.home-background {
-  // width: 100vw;
-  // position: absolute;
-}
+.order-button {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-// .ichitaru-logo {
-//   width: 500px;
-//   mix-blend-mode: multiply;
+  transition: width 0.1s linear;
+  &:hover {
+    width: 250px;
+  }
 
-//   @media screen and (max-width: 1350px) {
-//     width: 300px;
-//   }
-// }
+  @media (max-width: 2000px) {
+    width: 200px;
+    top: 60%;
+    left: 50%;
+  }
+  @media (max-width: 1500px) {
+    width: 180px;
+    top: 65%;
+    left: 50%;
+    width: 200px;
+  }
+  @media (max-width: 1180px) {
+    width: 150px;
+    top: 55%;
+    left: 50%;
+  }
+  @media (max-width: 913px) {
+    width: 150px;
+    top: 60%;
+    left: 50%;
+  }
+  @media (max-width: 736px) {
+    width: 130px;
+    top: 57%;
+    left: 50%;
+  }
+  @media (max-width: 693px) {
+    width: 130px;
+    top: 38%;
+    left: 50%;
+  }
+}
 
 .flex-center {
   @include flex(column, center, center);
 }
 
 // @todo: add some cool styles
-.online-order-button {
-  width: 100%;
-}
+
 .v-margin-10 {
   margin: 40px 0px;
 }
