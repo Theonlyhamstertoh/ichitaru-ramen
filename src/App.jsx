@@ -42,6 +42,7 @@ function App() {
         <HomeLayout isMobile={isMobile} />
         <Location />
         <Ramen />
+
         <Menu isMobile={isMobile} />
       </div>
     </div>
